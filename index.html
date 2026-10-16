@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applemen Sports Bar — Inwood, WV</title>
+  <meta name="description" content="Applemen Sports Bar in Inwood, WV: wings, burgers, cold drinks, live bands, trivia Tuesdays, pickleball courts, cornhole turf, a massive deck, an inside-outside bar and an event center for parties and private events.">
+  <link rel="canonical" href="https://applemensportsbar.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Applemen Sports Bar">
+  <meta property="og:url" content="https://applemensportsbar.com/">
+  <meta property="og:title" content="Applemen Sports Bar — Inwood, WV">
+  <meta property="og:description" content="Food, drinks, games and live music. Pickleball courts, cornhole turf, live bands, a massive deck, an inside-outside bar and an event center in Inwood, WV.">
+  <meta property="og:image" content="https://applemensportsbar.com/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://applemensportsbar.com/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Applemen Sports Bar logo — Food, Drinks, Games, Live Music in Inwood, WV">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Applemen Sports Bar — Inwood, WV">
+  <meta name="twitter:description" content="Food, drinks, games, live music and an event center in Inwood, WV.">
+  <meta name="twitter:image" content="https://applemensportsbar.com/og-image.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0f0a;
+      --dark: #0d130d;
+      --panel: #131a13;
+      --green: #2e7d32;
+      --green-bright: #43a047;
+      --green-light: #66bb6a;
+      --red: #c62828;
+      --red-light: #ef5350;
+      --white: #f0f7f0;
+      --grey: #7a9a7a;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Barlow', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw;
+      height: 64px;
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(46,125,50,0.18);
+    }
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: 0.08em;
+      color: var(--green-light);
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--white);
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.2s, color 0.2s;
+    }
+    .nav-links a:hover { opacity: 1; color: var(--green); }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      padding: 80px 5vw 60px;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 30%, rgba(46,125,50,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 80% at 80% 80%, rgba(198,40,40,0.10) 0%, transparent 60%),
+        var(--black);
+      z-index: 0;
+    }
+    /* stadium grid lines */
+    .hero-bg::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(46,125,50,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(46,125,50,0.06) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 1.2rem;
+      animation: fadeUp 0.8s ease both;
+    }
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(4.5rem, 14vw, 11rem);
+      line-height: 0.9;
+      letter-spacing: 0.02em;
+      color: var(--white);
+      animation: fadeUp 0.8s 0.1s ease both;
+    }
+    .hero-title span { color: var(--red); }
+    .hero-sub {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--grey);
+      margin-top: 1rem;
+      animation: fadeUp 0.8s 0.2s ease both;
+    }
+    .hero-divider {
+      width: 80px; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--green), var(--red), var(--green), transparent);
+      margin: 2rem auto;
+      animation: fadeUp 0.8s 0.3s ease both;
+    }
+    .hero-cta {
+      display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+      animation: fadeUp 0.8s 0.4s ease both;
+    }
+    .btn {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.85rem 2.2rem;
+      border: none; cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+    .btn-gold {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn-gold:hover { background: var(--green-bright); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+    .btn-outline:hover { border-color: var(--green); color: var(--green); transform: translateY(-2px); }
+
+    .hero-stats {
+      display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap;
+      margin-top: 4rem;
+      animation: fadeUp 0.8s 0.5s ease both;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.8rem;
+      color: var(--green-light);
+      line-height: 1;
+    }
+    .stat-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--grey);
+      margin-top: 0.25rem;
+    }
+
+    /* ── MARQUEE ── */
+    .marquee-wrap {
+      background: var(--green);
+      overflow: hidden;
+      padding: 0.6rem 0;
+    }
+    .marquee-track {
+      display: flex; gap: 0;
+      animation: marquee 28s linear infinite;
+      white-space: nowrap;
+    }
+    .marquee-item {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      color: var(--black);
+      padding: 0 2rem;
+    }
+    .marquee-dot { color: rgba(0,0,0,0.4); }
+
+    /* ── SECTION BASE ── */
+    section { padding: 6rem 5vw; }
+    .section-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      line-height: 1;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+    .section-title span { color: var(--red); }
+
+    /* ── ABOUT ── */
+    #about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .about-text p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: rgba(245,240,232,0.75);
+      margin-bottom: 1.25rem;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: rgba(46,125,50,0.15);
+      border: 1px solid rgba(46,125,50,0.15);
+    }
+    .feature-card {
+      background: var(--panel);
+      padding: 1.75rem;
+      transition: background 0.2s;
+    }
+    .feature-card:hover { background: #1f1f1f; }
+    .feature-icon { font-size: 1.8rem; margin-bottom: 0.75rem; }
+    .feature-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+    .feature-desc { font-size: 0.85rem; color: var(--grey); line-height: 1.5; }
+
+    /* ── HOURS ── */
+    #hours { background: var(--panel); }
+    .hours-inner {
+      max-width: 700px; margin: 0 auto; text-align: center;
+    }
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2.5rem;
+    }
+    .hours-table tr {
+      border-bottom: 1px solid rgba(46,125,50,0.12);
+    }
+    .hours-table tr.highlight { background: rgba(46,125,50,0.08); }
+    .hours-table td {
+      padding: 0.9rem 1rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.05rem;
+      letter-spacing: 0.04em;
+    }
+    .hours-table td:first-child {
+      text-align: left;
+      font-weight: 700;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+    .hours-table td:last-child {
+      text-align: right;
+      color: var(--green);
+    }
+    .today-badge {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.1rem 0.5rem;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    /* ── MENU ── */
+    #menu { background: var(--black); }
+    .menu-intro { max-width: 600px; margin-bottom: 3rem; }
+    .menu-intro p { color: var(--grey); line-height: 1.7; }
+    .happy-hour-banner { background: linear-gradient(135deg, rgba(198,40,40,0.15), rgba(46,125,50,0.15)); border: 1px solid rgba(198,40,40,0.3); padding: 1.25rem 1.75rem; margin-bottom: 2.5rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .hh-badge { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: var(--red-light); letter-spacing: 0.1em; white-space: nowrap; }
+    .hh-text { font-family: 'Barlow Condensed', sans-serif; font-size: 0.9rem; color: var(--grey); line-height: 1.6; }
+    .hh-text strong { color: var(--green-light); }
+    .menu-categories {
+      display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem;
+    }
+    .cat-btn {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.5rem 1.2rem;
+      border: 1px solid rgba(46,125,50,0.35);
+      background: transparent;
+      color: var(--grey);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cat-btn.active, .cat-btn:hover {
+      background: var(--green);
+      color: var(--black);
+      border-color: var(--green);
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1px;
+      background: rgba(46,125,50,0.10);
+    }
+    .menu-item {
+      background: var(--panel);
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: background 0.2s;
+    }
+    .menu-item:hover { background: #1a1a1a; }
+    .menu-item-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 0.2rem;
+    }
+    .menu-item-desc { font-size: 0.8rem; color: var(--grey); }
+    .menu-price {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem;
+      color: var(--red-light);
+      white-space: nowrap;
+    }
+
+    /* ── EVENTS ── */
+    #events { background: var(--panel); }
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .event-card {
+      border: 1px solid rgba(46,125,50,0.20);
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .event-card:hover { border-color: var(--green); transform: translateY(-3px); }
+    .event-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0;
+      width: 3px; height: 100%;
+      background: var(--red);
+    }
+    .event-day {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      color: var(--green);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .event-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .event-desc { font-size: 0.85rem; color: var(--grey); line-height: 1.5; }
+
+    /* ── CONTACT ── */
+    #contact {
+      background: var(--black);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .contact-info-block { margin-top: 2rem; }
+    .contact-row {
+      display: flex; align-items: flex-start; gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+    .contact-icon { font-size: 1.4rem; line-height: 1; padding-top: 0.1rem; }
+    .contact-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.25rem;
+    }
+    .contact-value {
+      font-size: 1rem;
+      color: var(--white);
+      line-height: 1.5;
+      text-decoration: none;
+    }
+    a.contact-value:hover { color: var(--green); }
+    .map-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: var(--panel);
+      border: 1px solid rgba(46,125,50,0.18);
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 1rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      color: var(--grey);
+      text-align: center;
+      padding: 2rem;
+    }
+    .map-placeholder .map-pin { font-size: 2.5rem; }
+    .map-placeholder p { font-size: 0.85rem; letter-spacing: 0.06em; }
+    .map-placeholder a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--green);
+      padding-bottom: 2px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      border-top: 1px solid rgba(46,125,50,0.15);
+      padding: 2.5rem 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 0.08em;
+      color: var(--green-light);
+    }
+    .footer-copy {
+      font-size: 0.78rem;
+      color: var(--grey);
+      letter-spacing: 0.05em;
+    }
+    .footer-fb a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--green-light);
+      text-decoration: none;
+    }
+    .footer-fb a:hover { color: var(--white); }
+
+
+    /* ── GALLERY ── */
+    #gallery { background: var(--black); }
+    .gallery-filters {
+      display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem;
+    }
+    .gal-btn {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.5rem 1.2rem;
+      border: 1px solid rgba(46,125,50,0.35);
+      background: transparent;
+      color: var(--grey);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .gal-btn.active, .gal-btn:hover {
+      background: var(--green);
+      color: var(--white);
+      border-color: var(--green);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 6px;
+    }
+    .gallery-grid .tall {
+      grid-row: span 2;
+    }
+    .gallery-grid .wide {
+      grid-column: span 2;
+    }
+    .gal-item {
+      position: relative;
+      overflow: hidden;
+      background: var(--panel);
+      aspect-ratio: 1;
+      cursor: pointer;
+    }
+    .gal-item.tall { aspect-ratio: unset; }
+    .gal-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .gal-item:hover img { transform: scale(1.06); }
+    .gal-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex; align-items: flex-end;
+      padding: 1.2rem;
+    }
+    .gal-item:hover .gal-overlay { opacity: 1; }
+    .gal-caption {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    /* placeholder styling when no image loaded */
+    .gal-placeholder {
+      width: 100%; height: 100%;
+      min-height: 220px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 0.5rem;
+      background: var(--panel);
+      border: 1px dashed rgba(46,125,50,0.25);
+    }
+    .gal-placeholder-icon { font-size: 2rem; opacity: 0.4; }
+    .gal-placeholder-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--grey);
+      opacity: 0.6;
+    }
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed; inset: 0; z-index: 999;
+      background: rgba(0,0,0,0.92);
+      align-items: center; justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: 90vw; max-height: 85vh;
+      object-fit: contain;
+      box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    }
+    .lightbox-close {
+      position: absolute; top: 1.5rem; right: 2rem;
+      font-size: 2rem; color: var(--white);
+      cursor: pointer; opacity: 0.7; line-height: 1;
+      background: none; border: none;
+      transition: opacity 0.2s;
+    }
+    .lightbox-close:hover { opacity: 1; }
+    .lightbox-caption {
+      position: absolute; bottom: 2rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1rem; letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+    }
+    .gallery-note {
+      margin-top: 2rem;
+      padding: 1.25rem 1.5rem;
+      border: 1px dashed rgba(46,125,50,0.3);
+      background: rgba(46,125,50,0.05);
+      font-size: 0.85rem;
+      color: var(--grey);
+      line-height: 1.7;
+    }
+    .gallery-note strong { color: var(--green-light); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      #about, #contact { grid-template-columns: 1fr; gap: 3rem; }
+      .feature-grid { grid-template-columns: 1fr 1fr; }
+      .hero-stats { gap: 1.5rem; }
+      nav { padding: 0 4vw; }
+      .nav-links { gap: 1.2rem; }
+    }
+    @media (max-width: 480px) {
+      .nav-links { display: none; }
+      .feature-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo"><img src="APPLEMEN SPORTS BAR COLOR.png" alt="Applemen Logo" style="width: 100px; height: 100px;"></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#hours">Hours</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Inwood, West Virginia's Premier Destination</p>
+    <h1 class="hero-title"><span>APPLEMEN</span><br>SPORTS<br>BAR</h1>
+    <p class="hero-sub">Food · Drinks · Games · Live Music</p>
+    <div class="hero-divider"></div>
+    <div class="hero-cta">
+      <a href="#menu" class="btn btn-gold">View Menu</a>
+      <a href="#contact" class="btn btn-outline">Find Us</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="48" height="48" style="display:inline-block;vertical-align:middle"><!-- Paddle handle --><rect x="38" y="52" width="10" height="22" rx="4" fill="#8B5E3C"/><rect x="40" y="52" width="3" height="22" rx="2" fill="#a0714f" opacity="0.5"/><!-- Paddle head --><ellipse cx="36" cy="36" rx="22" ry="26" fill="#2a2a2a"/><!-- Paddle face sheen --><ellipse cx="31" cy="28" rx="10" ry="13" fill="#3a3a3a" opacity="0.5"/><!-- Paddle edge highlight --><ellipse cx="36" cy="36" rx="22" ry="26" fill="none" stroke="#555" stroke-width="1.5"/><!-- Handle grip wrap lines --><line x1="38" y1="58" x2="48" y2="58" stroke="#6B4423" stroke-width="1.5"/><line x1="38" y1="62" x2="48" y2="62" stroke="#6B4423" stroke-width="1.5"/><line x1="38" y1="66" x2="48" y2="66" stroke="#6B4423" stroke-width="1.5"/><!-- Pickleball (yellow wiffle ball) --><circle cx="58" cy="58" r="14" fill="#d4e600"/><!-- Ball holes --><circle cx="54" cy="53" r="2" fill="#a8b800"/><circle cx="62" cy="53" r="2" fill="#a8b800"/><circle cx="58" cy="58" r="2" fill="#a8b800"/><circle cx="52" cy="59" r="2" fill="#a8b800"/><circle cx="64" cy="59" r="2" fill="#a8b800"/><circle cx="55" cy="64" r="2" fill="#a8b800"/><circle cx="62" cy="64" r="2" fill="#a8b800"/><!-- Ball shine --><circle cx="54" cy="51" r="3" fill="#eeff44" opacity="0.4"/></svg></div>
+        <div class="stat-label">Pickleball Courts</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 60" width="48" height="48" style="display:inline-block;vertical-align:middle"><polygon points="10,52 70,32 70,37 10,57" fill="#8B2020"/><polygon points="10,47 70,27 70,32 10,52" fill="#c0392b"/><ellipse cx="56" cy="31" rx="6" ry="4" fill="#111"/><line x1="63" y1="32" x2="68" y2="48" stroke="#8B9DC3" stroke-width="3" stroke-linecap="round"/><line x1="70" y1="30" x2="75" y2="46" stroke="#8B9DC3" stroke-width="3" stroke-linecap="round"/><rect x="8" y="50" width="12" height="8" rx="2" fill="#e74c3c" transform="rotate(-5,14,54)"/></svg></div>
+        <div class="stat-label">Cornhole Turf</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">🎤</div>
+        <div class="stat-label">Live Entertainment</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">🍺</div>
+        <div class="stat-label">Full Bar</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marquee">
+    <span class="marquee-item">Daily Specials <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Wings &amp; Burgers <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Trivia Tuesdays <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Pickleball Courts <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Inside-Outside Bar <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Massive Deck <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Live Bands <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Cornhole Turf <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Kids<span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Daily Specials <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Wings &amp; Burgers <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Trivia Tuesdays <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Pickleball Courts <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Inside-Outside Bar <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Massive Deck <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Live Bands <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Cornhole Turf <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Kids<span class="marquee-dot">✦</span></span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-text">
+    <p class="section-label">Our Story</p>
+    <h2 class="section-title">MORE THAN A <span>BAR</span></h2>
+    <p>Applemen Sports Bar is Inwood's go-to destination for great food, cold drinks, and good times. Fully renovated with an upscale modern look, we've got everything you need for a perfect outing — whether you're catching the game or hanging out with friends.</p>
+    <p>From our massive outdoor deck and inside-outside bar to pickleball courts and live music events, there's always something happening at Applemen, and kids can stay and have fun until 9pm.</p>
+    <a href="#menu" class="btn btn-gold" style="margin-top: 1rem;">See Our Menu</a>
+  </div>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="48" height="48" style="display:inline-block;vertical-align:middle"><!-- Paddle handle --><rect x="38" y="52" width="10" height="22" rx="4" fill="#8B5E3C"/><rect x="40" y="52" width="3" height="22" rx="2" fill="#a0714f" opacity="0.5"/><!-- Paddle head --><ellipse cx="36" cy="36" rx="22" ry="26" fill="#2a2a2a"/><!-- Paddle face sheen --><ellipse cx="31" cy="28" rx="10" ry="13" fill="#3a3a3a" opacity="0.5"/><!-- Paddle edge highlight --><ellipse cx="36" cy="36" rx="22" ry="26" fill="none" stroke="#555" stroke-width="1.5"/><!-- Handle grip wrap lines --><line x1="38" y1="58" x2="48" y2="58" stroke="#6B4423" stroke-width="1.5"/><line x1="38" y1="62" x2="48" y2="62" stroke="#6B4423" stroke-width="1.5"/><line x1="38" y1="66" x2="48" y2="66" stroke="#6B4423" stroke-width="1.5"/><!-- Pickleball (yellow wiffle ball) --><circle cx="58" cy="58" r="14" fill="#d4e600"/><!-- Ball holes --><circle cx="54" cy="53" r="2" fill="#a8b800"/><circle cx="62" cy="53" r="2" fill="#a8b800"/><circle cx="58" cy="58" r="2" fill="#a8b800"/><circle cx="52" cy="59" r="2" fill="#a8b800"/><circle cx="64" cy="59" r="2" fill="#a8b800"/><circle cx="55" cy="64" r="2" fill="#a8b800"/><circle cx="62" cy="64" r="2" fill="#a8b800"/><!-- Ball shine --><circle cx="54" cy="51" r="3" fill="#eeff44" opacity="0.4"/></svg></div>
+      <div class="feature-name">Pickleball Courts</div>
+      <div class="feature-desc">Get your game on with friends and family on our full outdoor courts.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎸</div>
+      <div class="feature-name">Live Music</div>
+      <div class="feature-desc">Catch live bands on our paver stage area — check Facebook for upcoming shows.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🍹</div>
+      <div class="feature-name">Inside-Outside Bar</div>
+      <div class="feature-desc">Unique open-air bar concept connecting our indoor and outdoor spaces.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 60" width="48" height="48" style="display:inline-block;vertical-align:middle"><polygon points="10,52 70,32 70,37 10,57" fill="#8B2020"/><polygon points="10,47 70,27 70,32 10,52" fill="#c0392b"/><ellipse cx="56" cy="31" rx="6" ry="4" fill="#111"/><line x1="63" y1="32" x2="68" y2="48" stroke="#8B9DC3" stroke-width="3" stroke-linecap="round"/><line x1="70" y1="30" x2="75" y2="46" stroke="#8B9DC3" stroke-width="3" stroke-linecap="round"/><rect x="8" y="50" width="12" height="8" rx="2" fill="#e74c3c" transform="rotate(-5,14,54)"/></svg></div>
+      <div class="feature-name">Cornhole Turf</div>
+      <div class="feature-desc">Artificial turf area with cornhole — perfect for weekend hangouts.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🏡</div>
+      <div class="feature-name">Massive Deck</div>
+      <div class="feature-desc">Huge outdoor deck perfect for groups, parties, and soaking up the sun.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">👶</div>
+      <div class="feature-name">Kids until 9pm</div>
+      <div class="feature-desc">Bring the family. Little ones have plenty of space to have fun too.</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOURS -->
+<section id="hours">
+  <div class="hours-inner">
+    <p class="section-label">We're Open</p>
+    <h2 class="section-title">HOURS OF <span>OPERATION</span></h2>
+    <table class="hours-table">
+      <tr><td>Monday</td><td>11:00 AM – 11:00 PM</td></tr>
+      <tr><td>Tuesday</td><td>11:00 AM – 11:00 PM</td></tr>
+      <tr><td>Wednesday</td><td>11:00 AM – 11:00 PM</td></tr>
+      <tr><td>Thursday</td><td>11:00 AM – 11:00 PM</td></tr>
+      <tr class="highlight"><td>Friday</td><td>11:00 AM – 1:00 AM</td></tr>
+      <tr class="highlight"><td>Saturday</td><td>11:00 AM – 1:00 AM</td></tr>
+      <tr><td>Sunday</td><td>9:00 AM – 9:00 PM</td></tr>
+    </table>
+    <p style="margin-top: 2rem; color: var(--grey); font-size: 0.85rem;">Hours may vary on holidays. Follow us on <a href="https://www.facebook.com/applemensportsbar" target="_blank" style="color: var(--green);">Facebook</a> for the latest updates.</p>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <p class="section-label">Kitchen &amp; Bar</p>
+  <h2 class="section-title">OUR <span>MENU</span></h2>
+  <div class="menu-intro">
+    <p>Fresh food made in-house — from our famous smash burgers and wings to crab cakes and steaks. Something for everyone.</p>
+  </div>
+  <div class="happy-hour-banner">
+    <div class="hh-badge">🍺 Happy Hour · 4pm–7pm</div>
+    <div class="hh-text"><strong>Mon–Wed:</strong> ½ off all appetizers &nbsp;·&nbsp; <strong>Mon–Thurs:</strong> $2.50 domestic beers &nbsp;·&nbsp; Ask about daily specials!</div>
+  </div>
+  <div class="menu-categories">
+    <button class="cat-btn active" onclick="filterMenu('starters',this)">Starters</button>
+    <button class="cat-btn" onclick="filterMenu('burgers',this)">Burgers</button>
+    <button class="cat-btn" onclick="filterMenu('wings',this)">Wings</button>
+    <button class="cat-btn" onclick="filterMenu('chicken',this)">Chicken</button>
+    <button class="cat-btn" onclick="filterMenu('specialties',this)">Specialties</button>
+    <button class="cat-btn" onclick="filterMenu('flatbread',this)">Flatbread</button>
+    <button class="cat-btn" onclick="filterMenu('sandwiches',this)">Sandwiches</button>
+    <button class="cat-btn" onclick="filterMenu('salads',this)">Salads</button>
+    <button class="cat-btn" onclick="filterMenu('soups',this)">Soups</button>
+    <button class="cat-btn" onclick="filterMenu('sides',this)">Sides</button>
+    <button class="cat-btn" onclick="filterMenu('desserts',this)">Desserts</button>
+    <button class="cat-btn" onclick="filterMenu('beverages',this)">Beverages</button>
+  </div>
+  <div class="menu-grid" id="menu-grid"></div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <p class="section-label">What's On</p>
+  <h2 class="section-title">WEEKLY <span>EVENTS</span></h2>
+  <div class="events-grid">
+    <div class="event-card">
+      <div class="event-day">Every Tuesday · 7:00 PM</div>
+      <div class="event-name">Pour House Trivia Night</div>
+      <div class="event-desc">Gather your team and put your knowledge to the test. Great prizes and even better drinks.</div>
+    </div>
+    <div class="event-card">
+      <div class="event-day">Weekends</div>
+      <div class="event-name">Live Music & Bands</div>
+      <div class="event-desc">Local and regional acts perform on our outdoor stage. Follow our Facebook page for the current lineup.</div>
+    </div>
+    <div class="event-card">
+      <div class="event-day">Every Day</div>
+      <div class="event-name">Daily Food & Drink Specials</div>
+      <div class="event-desc">Fresh specials every single day. Check Facebook or call us to find out what's on tap today.</div>
+    </div>
+    <div class="event-card">
+      <div class="event-day">Anytime</div>
+      <div class="event-name">Pickleball & Cornhole</div>
+      <div class="event-desc">Courts and turf areas open during business hours. Grab some friends and get a game going.</div>
+    </div>
+    <div class="event-card">
+      <div class="event-day">Private Events</div>
+      <div class="event-name">Host Your Party Here</div>
+      <div class="event-desc">Our venue is perfect for private events. Give us a call to discuss bookings and group packages.</div>
+    </div>
+    <div class="event-card">
+      <div class="event-day">All Weekend</div>
+      <div class="event-name">Watch the Game</div>
+      <div class="event-desc">Multiple TVs throughout the bar. Never miss a game — NFL, NBA, MLB, UFC and more.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery">
+  <p class="section-label">Inside &amp; Out</p>
+  <h2 class="section-title">PHOTO <span>GALLERY</span></h2>
+
+  <div class="gallery-filters">
+    <button class="gal-btn active" onclick="filterGallery('all', this)">All</button>
+    <button class="gal-btn" onclick="filterGallery('food', this)">Food &amp; Drinks</button>
+    <button class="gal-btn" onclick="filterGallery('bar', this)">The Bar</button>
+    <button class="gal-btn" onclick="filterGallery('outside', this)">Outside &amp; Events</button>
+  </div>
+
+  <div class="gallery-grid" id="gallery-grid"></div>
+
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="">
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div>
+    <p class="section-label">Come See Us</p>
+    <h2 class="section-title">FIND <span>US</span></h2>
+    <div class="contact-info-block">
+      <div class="contact-row">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Address</div>
+          <a href="https://maps.google.com/?q=72+Pedal+Car+Dr+Inwood+WV+25428" target="_blank" class="contact-value">72 Pedal Car Dr<br>Inwood, WV 25428</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-label">Phone</div>
+          <a href="tel:3048108640" class="contact-value">(304) 810-8640</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">💬</div>
+        <div>
+          <div class="contact-label">Social Media</div>
+          <a href="https://www.facebook.com/applemensportsbar" target="_blank" class="contact-value">Follow us on Facebook</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="map-placeholder">
+      <div class="map-pin">📍</div>
+      <p><strong style="color:var(--white)">72 Pedal Car Dr</strong><br>Inwood, WV 25428</p>
+      <a href="https://maps.google.com/?q=72+Pedal+Car+Dr+Inwood+WV+25428" target="_blank">Open in Google Maps →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Applemen Sports Bar</div>
+  <div class="footer-copy">© 2025 Applemen Sports Bar · Inwood, WV</div>
+  <div class="footer-fb"><a href="https://www.facebook.com/applemensportsbar" target="_blank">Facebook →</a></div>
+</footer>
+
+<script>
+  const menuData = {
+    starters: [
+      { name:"Soft Bavarian Pretzel", price:"$9.95", desc:"Giant pretzel brushed with butter and salt. Served with sweet & spicy mustard and warm queso." },
+      { name:"French Fries", price:"$3.95", desc:"Classic fries. Upgrade to Sidewinder Fries +$2." },
+      { name:"Pickle Nickles", price:"$8.99", desc:"Zesty pickle slices battered and deep fried with your choice of sauce." },
+      { name:"Cheese Fries", price:"$5.95", desc:"Fries with melted cheddar cheese or queso. Add Sidewinder +$2 · Chili +$3 · Sour Cream +$1." },
+      { name:"Onion Rings", price:"$8.99", desc:"Crispy Vidalia onion deep fried in beer batter with tangy Ring Sauce. Add Cheese +$2, Bacon +$2." },
+      { name:"Mozzarella Sticks", price:"$8.99", desc:"5 crispy beer battered mozzarella sticks with marinara sauce." },
+      { name:"Nachos Supreme", price:"$9.99", desc:"Fully loaded with queso, salsa, lettuce, sour cream & jalapeños. Add Chili +$2 / Chicken +$4.50 / Beef +$3.99." },
+      { name:"Buffalo Chicken Dip", price:"$11.95", desc:"Creamy buffalo chicken dip served with tortilla chips." },
+      { name:"Chips & Salsa", price:"$6.99", desc:"House made salsa with fresh tortilla chips." },
+      { name:"Crab Dip", price:"$13.95", desc:"Crab meat, cheeses and a touch of Old Bay. Served with crusty baguette slices and tortilla chips." },
+      { name:"Hot Pepper Cheese Balls", price:"$8.99", desc:"Served with your choice of sauce." },
+      { name:"Mini Corn Dogs (10)", price:"$8.99", desc:"Sweet little dogs with honey mustard for dipping." },
+      { name:"Funnel Fries", price:"$7.50", desc:"Crispy and delicious, dusted with powdered sugar." },
+    ],
+    burgers: [
+      { name:"Classic Burger", price:"$8.99", desc:"Seasoned smash burger on a buttery toasted bun with lettuce, tomato, onion and pickles. Add 2nd patty +$2.50." },
+      { name:"The Barnyard", price:"$14.99", desc:"Cheddar cheese, bacon, fried egg, lettuce, tomato, BBQ sauce, and onion rings. Might be a bit messy but it's so good!" },
+      { name:"Mushroom & Swiss Burger", price:"$13.95", desc:"Savory smash burger smothered in sautéed mushrooms and caramelized onions, topped with melted Swiss cheese." },
+      { name:"Applemen Special Burger", price:"$14.50", desc:"Seasoned burger mounded with caramelized onions, bacon, lettuce and tomato. Your choice of cheese." },
+      { name:"Black Bean Burger 🌱", price:"$13.95", desc:"Flavorful black bean patty seasoned with smoky spices. Topped with lettuce, tomato, and red onion on a toasted bun." },
+      { name:"Impossible Burger 🌱", price:"$9.99", desc:"Plant-based burger, plain or loaded with lettuce, tomato, onion and pickles." },
+    ],
+    wings: [
+      { name:"Traditional Bone-In Wings (6)", price:"$9.95", desc:"Hot juicy bone-in wings with the perfect crunch. Pick your sauce!" },
+      { name:"Traditional Bone-In Wings (10)", price:"$12.49", desc:"Classic bar wings. Choose from 12 sauces." },
+      { name:"Traditional Bone-In Wings (15)", price:"$17.49", desc:"Party size. Pick your sauce!" },
+      { name:"Traditional Bone-In Wings (20)", price:"$22.99", desc:"Go big! Your choice of sauce." },
+      { name:"Boneless Wings (6)", price:"$8.99", desc:"Tender bite-size crispy chicken. Pick your sauce!" },
+      { name:"Boneless Wings (10)", price:"$12.49", desc:"Boneless and delicious. Choose from 12 sauces." },
+      { name:"Boneless Wings (15)", price:"$17.49", desc:"Party size boneless wings." },
+      { name:"Boneless Wings (20)", price:"$22.99", desc:"The ultimate boneless platter." },
+      { name:"Sauces", price:"", desc:"Mango Habanero · Sweet Thai Chili · Buffalo · Buffalo Hot · Buffalo Ranch · BBQ · Honey Sriracha · Sweet & Sour · Old Bay (dry) · Honey Old Bay · Lemon Pepper (dry) · Garlic Pepper (dry)" },
+    ],
+    chicken: [
+      { name:"Grilled Chicken Sandwich", price:"$9.99", desc:"Seasoned grilled chicken on a bun with lettuce and tomato. Add Cheese +$1.50, Bacon +$2. Served with chips & pickle." },
+      { name:"Classic Fried Chicken Sandwich", price:"$10.50", desc:"Crispy deep fried chicken breast on a buttery bun with lettuce and tomato. Add Cheese +$1.50, Bacon +$2." },
+      { name:"Spicy Fried Chicken Sandwich", price:"$11.99", desc:"Spicy fried chicken breast with sharp cheddar, tomato, lettuce, pickle, and onion. Add Bacon +$2." },
+      { name:"Chicken Tender Platter", price:"$11.50", desc:"Four crispy chicken tenders served with fries and your choice of dipping sauce." },
+    ],
+    specialties: [
+      { name:"BBQ Pulled Pork Platter", price:"$12.95", desc:"BBQ pulled pork served with fries and coleslaw." },
+      { name:"Hamburger Steak", price:"$16.75", desc:"½ lb hamburger smothered with mushrooms, onions, and brown gravy. Served with choice of 2 sides." },
+      { name:"Crab Cake Platter", price:"$19.00", desc:"House made Jumbo Lump Crab Cake. Served with 2 sides. (2 Crab Cakes: $27)" },
+      { name:"Black Gold Steak (8oz)", price:"$19.50", desc:"Marinated 8oz Sirloin. Comes with choice of 2 sides." },
+      { name:"Ribeye Steak (12oz)", price:"$19.50", desc:"Seasoned and seared ribeye with your choice of 2 sides." },
+    ],
+    flatbread: [
+      { name:"Chicken & Cheese Flatbread", price:"$12.49", desc:"Chicken and mozzarella cheese." },
+      { name:"Steak & Cheese Flatbread", price:"$12.49", desc:"Steak and mozzarella cheese." },
+      { name:"Veggie Flatbread 🌱", price:"$10.49", desc:"Cherry tomatoes, red onion, squash, mozzarella cheese, and mushrooms with a ranch drizzle." },
+    ],
+    sandwiches: [
+      { name:"Crab Cake Sandwich", price:"$13.50", desc:"House made Jumbo Lump crab cake sandwich. Served with chips and pickle." },
+      { name:"Classic Club", price:"$12.50", desc:"Ham, turkey, and bacon triple decker with American cheese." },
+      { name:"Chicken Salad Club", price:"$11.00", desc:"The perfect marriage between chicken salad and a club sandwich. A must try!" },
+      { name:"Steak/Chicken & Cheese Sub", price:"$12.50", desc:"Personalize with your own toppings." },
+      { name:"Grilled Cheese", price:"$6.00", desc:"Classic grilled cheese. Add Ham +$2." },
+    ],
+    salads: [
+      { name:"Homemade Chicken Salad", price:"$10.50", desc:"Two scoops of house made chicken salad on fresh lettuce with tomato and pickle spear. Served with warm naan bread." },
+      { name:"Caesar Salad", price:"$7.95", desc:"Crispy romaine with creamy Caesar dressing, herb roasted croutons and parmesan. Add grilled or crispy chicken +$5." },
+      { name:"House Salad 🌱", price:"$7.95", desc:"Fresh mixed greens with cherry tomatoes, red onion, cheddar cheese, carrots and herb roasted croutons." },
+      { name:"Chef's Salad", price:"$13.00", desc:"Fresh greens topped with turkey, ham, cheddar cheese, hard-boiled egg, and tomatoes. Your choice of dressing." },
+      { name:"Cobb Salad", price:"$13.00", desc:"Seasoned grilled chicken over fresh greens with bacon, hard-boiled egg, bleu cheese crumbles, and bleu cheese dressing." },
+      { name:"Black Gold Steak Salad", price:"$15.00", desc:"Marinated 8oz steak over fresh greens with cherry tomatoes, red onion, and Sidewinder Fries. Pepper Parmesan dressing." },
+      { name:"Soup & Salad", price:"$11.95", desc:"Cup of soup of the day or chili served with our fresh house salad." },
+    ],
+    soups: [
+      { name:"Homemade Chili", price:"$6.00", desc:"Sweet and savory homemade chili made with fresh ground beef. Topped with cheddar cheese and sour cream." },
+      { name:"Soup of the Day", price:"$6.00", desc:"Ask your server about our delicious homemade soup of the day. Seafood soups +$2.50." },
+    ],
+    sides: [
+      { name:"Coleslaw", price:"$3.99", desc:"House coleslaw." },
+      { name:"Baked Potato", price:"$3.99", desc:"Classic baked potato. Add Chili +$3.50, Meats +$5." },
+      { name:"Green Beans", price:"$3.99", desc:"Fresh green beans." },
+      { name:"Fresh Garden Salad", price:"$4.50", desc:"Lettuce, red onions and cherry tomatoes." },
+      { name:"Mashed Potato & Gravy", price:"$3.99", desc:"Creamy mashed potatoes with gravy." },
+      { name:"Onion Rings (4)", price:"$4.00", desc:"Four crispy onion rings." },
+      { name:"Applesauce", price:"$3.50", desc:"Chunky cinnamon applesauce." },
+      { name:"Macaroni & Cheese", price:"$3.99", desc:"Creamy mac and cheese." },
+      { name:"Macaroni Salad", price:"$3.99", desc:"Classic macaroni salad." },
+      { name:"French Fries", price:"$3.95", desc:"Golden and crispy. Upgrade to Sidewinder Fries +$2." },
+    ],
+    desserts: [
+      { name:"The Applemen Fritter", price:"$6.99", desc:"Cinnamon apple fritter, served warm with caramel sauce." },
+      { name:"Ice Cream", price:"$2.50", desc:"Vanilla by the scoop." },
+      { name:"Fudge Brownie Sundae", price:"$8.50", desc:"Rich gooey chocolate brownie with a scoop of vanilla ice cream, drizzled with caramel and chocolate sauces." },
+      { name:"Homemade Bread Pudding", price:"$6.99", desc:"Made fresh in house. Add a scoop of ice cream for $2.50." },
+    ],
+    beverages: [
+      { name:"Fountain Soda", price:"$3.69", desc:"Pepsi products." },
+      { name:"Lemonade", price:"$3.69", desc:"Fresh lemonade." },
+      { name:"Strawberry Daiquiri", price:"$4.50", desc:"A kids' favorite." },
+      { name:"Sweet/Unsweetened Tea", price:"$3.69", desc:"Southern-style sweet tea or unsweetened." },
+      { name:"Mocktails", price:"Varies", desc:"Ask your server about our available mocktails." },
+    ],
+  };
+
+  function filterMenu(cat, btn) {
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const grid = document.getElementById('menu-grid');
+    grid.innerHTML = menuData[cat].map(item => `
+      <div class="menu-item">
+        <div>
+          <div class="menu-item-name">${item.name}</div>
+          <div class="menu-item-desc">${item.desc}</div>
+        </div>
+        <div class="menu-price">${item.price}</div>
+      </div>
+    `).join('');
+  }
+
+
+  // ── GALLERY ──
+  const galleryPhotos = [
+    // ============================================================
+    // TO ADD YOUR OWN PHOTOS: replace the src URLs below with
+    // links to your real photos from Facebook, Google Photos, etc.
+    // ============================================================
+    { src: './mushroomswissbig.jpg', caption: 'Applemen Special Burger', category: 'food' },
+    { src: 'wings.jpg', caption: 'Wings', category: 'food', tall: true },
+    { src: 'shrimp.jpg', caption: 'Shrimp', category: 'food' },
+    { src: 'beers.jpg', caption: 'Beer', category: 'food' },    
+    { src: 'crabdrink.jpg', caption: 'Drinks', category: 'food' },    
+    { src: 'drinks.jpg', caption: 'Drinks', category: 'food' },    
+    { src: 'steakandcheese.jpg', caption: 'Steak and Cheese Flatbread', category: 'food' },
+    { src: 'bar.jpg', caption: 'The Bar', category: 'bar', wide: true },
+    { src: 'pickleball.jpg', caption: 'Pickleball Courts', category: 'outside' },
+    { src: 'cornhole.jpg', caption: 'Cornhole Turf', category: 'outside' },
+    { src: 'music.jpg', caption: 'Live Music Nights', category: 'outside' },
+  ];
+
+  let currentGalleryFilter = 'all';
+
+  function filterGallery(cat, btn) {
+    document.querySelectorAll('.gal-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentGalleryFilter = cat;
+    renderGallery();
+  }
+
+  function renderGallery() {
+    const grid = document.getElementById('gallery-grid');
+    const filtered = currentGalleryFilter === 'all'
+      ? galleryPhotos
+      : galleryPhotos.filter(p => p.category === currentGalleryFilter);
+
+    grid.innerHTML = filtered.map((photo, i) => `
+      <div class="gal-item${photo.tall ? ' tall' : ''}${photo.wide ? ' wide' : ''}"
+           onclick="openLightbox('${photo.src}', '${photo.caption}')">
+        <img src="${photo.src}" alt="${photo.caption}" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-caption">${photo.caption}</div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function openLightbox(src, caption) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox-caption').innerHTML = caption;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  renderGallery();
+
+  // Init
+  filterMenu('starters', document.querySelector('.cat-btn'));
+
+  // Highlight today's hours
+  const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const today = days[new Date().getDay()];
+  document.querySelectorAll('.hours-table td:first-child').forEach(td => {
+    if (td.textContent === today) {
+      const badge = document.createElement('span');
+      badge.className = 'today-badge';
+      badge.textContent = 'Today';
+      td.appendChild(badge);
+    }
+  });
+</script>
+
+</body>
+</html>
