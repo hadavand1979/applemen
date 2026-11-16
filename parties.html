@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Events & Party Booking — Applemen Sports Bar</title>
+<meta name="description" content="Host your party at Applemen Sports Bar in Inwood, WV. Birthday parties, sports banquets, school functions, tournaments, fundraisers and more. Our space is free to use. Call 304-810-8640.">
+<link rel="canonical" href="https://applemensportsbar.com/parties">
+<meta property="og:title" content="Host Your Party at Applemen Sports Bar — Free Space!">
+<meta property="og:description" content="Birthday parties, sports banquets, school functions, tournaments & fundraisers. Our space is FREE. Inwood, WV — 304-810-8640.">
+<meta property="og:image" content="https://applemensportsbar.com/applemen-party-flier.png">
+<meta property="og:url" content="https://applemensportsbar.com/parties">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --black:#0a0f0a;--dark:#0d130d;--panel:#131a13;
+    --green:#2e7d32;--green-bright:#43a047;--green-light:#66bb6a;
+    --red:#c62828;--red-light:#ef5350;
+    --white:#f0f7f0;--grey:#7a9a7a;
+  }
+  html{scroll-behavior:smooth;}
+  body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;overflow-x:hidden;}
+
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:0 5vw;height:64px;
+    background:rgba(10,10,10,0.92);backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(46,125,50,0.18);
+  }
+  .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.08em;color:var(--green-light);text-decoration:none;}
+  .nav-links{display:flex;gap:2rem;list-style:none;}
+  .nav-links a{
+    font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.85rem;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--white);
+    text-decoration:none;opacity:.75;transition:opacity .2s,color .2s;
+  }
+  .nav-links a:hover,.nav-links a.active{opacity:1;color:var(--green-light);}
+
+  .page-hero{
+    padding:120px 5vw 60px;
+    background:linear-gradient(160deg,#060f06 0%,var(--dark) 100%);
+    border-bottom:3px solid transparent;
+    border-image:linear-gradient(90deg,var(--red),var(--green),var(--red)) 1;
+    text-align:center;
+  }
+  .page-hero h1{
+    font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,8vw,5.5rem);
+    letter-spacing:.05em;line-height:1;
+    color:var(--white);
+  }
+  .page-hero h1 span{color:var(--green-light);}
+  .page-hero p{
+    font-family:'Barlow Condensed',sans-serif;font-size:1.25rem;
+    color:var(--grey);letter-spacing:.08em;margin-top:.75rem;
+  }
+  .free-pill{
+    display:inline-block;
+    background:var(--green);color:#fff;
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;
+    font-size:1.1rem;letter-spacing:.1em;text-transform:uppercase;
+    padding:.5rem 2rem;border-radius:999px;margin-top:1.5rem;
+    box-shadow:0 4px 20px rgba(46,125,50,.4);
+  }
+
+  section{max-width:1100px;margin:0 auto;padding:60px 5vw;}
+
+  .section-label{
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--green-bright);margin-bottom:.5rem;
+  }
+  .section-title{
+    font-family:'Bebas Neue',sans-serif;font-size:2.6rem;letter-spacing:.05em;
+    color:var(--white);margin-bottom:2rem;
+  }
+  .section-title span{color:var(--green-light);}
+
+  .events-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;
+    margin-bottom:2rem;
+  }
+  .event-card{
+    background:var(--panel);border:1px solid rgba(46,125,50,.15);
+    border-top:3px solid var(--red);border-radius:8px;
+    padding:1.1rem 1.2rem;
+  }
+  .event-card:nth-child(even){border-top-color:var(--green);}
+  .event-icon{font-size:1.8rem;margin-bottom:.4rem;}
+  .event-name{
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.05rem;
+    letter-spacing:.05em;text-transform:uppercase;color:var(--white);
+  }
+  .event-desc{font-size:.85rem;color:var(--grey);margin-top:.3rem;line-height:1.4;}
+
+  .cta-box{
+    background:linear-gradient(135deg,#060f06,var(--panel));
+    border:1px solid rgba(46,125,50,.2);border-left:5px solid var(--green-bright);
+    border-radius:8px;padding:2rem;margin-bottom:2rem;
+  }
+  .cta-box h3{
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.3rem;
+    text-transform:uppercase;letter-spacing:.06em;color:var(--white);margin-bottom:.5rem;
+  }
+  .cta-box p{font-size:.95rem;color:var(--grey);line-height:1.6;}
+
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+  @media(max-width:600px){.contact-grid{grid-template-columns:1fr;}}
+  .contact-card{
+    background:var(--panel);border:1px solid rgba(46,125,50,.15);
+    border-radius:8px;padding:1.2rem;display:flex;align-items:center;gap:1rem;
+  }
+  .contact-card.full{grid-column:span 2;}
+  @media(max-width:600px){.contact-card.full{grid-column:span 1;}}
+  .cc-icon{
+    width:46px;height:46px;border-radius:10px;flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;font-size:1.3rem;
+  }
+  .cc-phone{background:rgba(198,40,40,.2);border:1px solid rgba(198,40,40,.35);}
+  .cc-web  {background:rgba(46,125,50,.2); border:1px solid rgba(46,125,50,.35);}
+  .cc-fb   {background:rgba(24,119,242,.18);border:1px solid rgba(24,119,242,.3);}
+  .cc-dd   {background:rgba(255,80,0,.15); border:1px solid rgba(255,80,0,.28);}
+  .cc-info{flex:1;min-width:0;}
+  .cc-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;color:var(--grey);font-family:'Barlow Condensed',sans-serif;}
+  .cc-value{font-weight:600;font-size:1rem;color:var(--white);margin-top:.15rem;}
+  .cc-value a{color:var(--green-light);text-decoration:none;}
+  .cc-value a:hover{text-decoration:underline;}
+  .phone-big{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:.08em;color:var(--white);}
+  .qr-box{
+    flex-shrink:0;width:80px;height:80px;
+    background:#fff;border-radius:8px;padding:4px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .qr-box img{width:72px;height:72px;display:block;}
+
+  footer{
+    text-align:center;padding:2rem;border-top:1px solid rgba(46,125,50,.12);
+    font-size:.8rem;color:var(--grey);
+  }
+  footer a{color:var(--green-light);text-decoration:none;}
+
+  @media(max-width:640px){
+    .nav-links{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">Applemen</a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#hours">Hours</a></li>
+    <li><a href="/#menu">Menu</a></li>
+    <li><a href="/#events">Events</a></li>
+    <li><a href="/#gallery">Gallery</a></li>
+    <li><a href="/parties" class="active">Parties</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <h1>Planning a <span>Party?</span></h1>
+  <p>Let us know — we've got you covered.</p>
+  <div class="free-pill">★ Our Space is FREE to Use ★</div>
+</div>
+
+<section>
+  <p class="section-label">We Can Host</p>
+  <h2 class="section-title">WHAT KIND OF <span>EVENT?</span></h2>
+  <div class="events-grid">
+    <div class="event-card"><div class="event-icon">🎂</div><div class="event-name">Birthday Parties</div><div class="event-desc">Celebrate with great food &amp; drinks</div></div>
+    <div class="event-card"><div class="event-icon">🏆</div><div class="event-name">Retirement Parties</div><div class="event-desc">Send them off right — big or small groups</div></div>
+    <div class="event-card"><div class="event-icon">🏓</div><div class="event-name">Pickleball Tournaments</div><div class="event-desc">Pre &amp; post-game gatherings</div></div>
+    <div class="event-card"><div class="event-icon">🏐</div><div class="event-name">Volleyball Tournaments</div><div class="event-desc">Team celebrations &amp; award nights</div></div>
+    <div class="event-card"><div class="event-icon">🌽</div><div class="event-name">Cornhole Tournaments</div><div class="event-desc">Bags, brews &amp; a great time</div></div>
+    <div class="event-card"><div class="event-icon">❤️</div><div class="event-name">Fundraisers</div><div class="event-desc">Charity events &amp; benefit nights</div></div>
+    <div class="event-card"><div class="event-icon">🏫</div><div class="event-name">School Functions</div><div class="event-desc">Parent nights, clubs &amp; school events</div></div>
+    <div class="event-card"><div class="event-icon">🍎</div><div class="event-name">Teacher Meetings</div><div class="event-desc">Faculty gatherings &amp; staff appreciation</div></div>
+    <div class="event-card"><div class="event-icon">🥇</div><div class="event-name">Sports Banquets</div><div class="event-desc">End-of-season awards &amp; team dinners</div></div>
+    <div class="event-card"><div class="event-icon">🎓</div><div class="event-name">Graduation Parties</div><div class="event-desc">Class of any year</div></div>
+    <div class="event-card"><div class="event-icon">📺</div><div class="event-name">Watch Parties</div><div class="event-desc">Big screens for the big game</div></div>
+    <div class="event-card"><div class="event-icon">🎉</div><div class="event-name">Holiday &amp; Office Parties</div><div class="event-desc">Reunions &amp; seasonal events</div></div>
+  </div>
+
+  <div class="cta-box">
+    <h3>🍎 Don't see your event? Just ask — if we can host it, we will.</h3>
+    <p>We work with you to make your event a success. Food &amp; drink packages available. Reach out and let's talk details — we love a good party.</p>
+  </div>
+
+  <p class="section-label">Get In Touch</p>
+  <h2 class="section-title">BOOK YOUR <span>EVENT</span></h2>
+  <div class="contact-grid">
+
+    <div class="contact-card full">
+      <div class="cc-icon cc-phone">📞</div>
+      <div class="cc-info">
+        <div class="cc-label">Call or Text to Book</div>
+        <div class="phone-big">304-810-8640</div>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <div class="cc-icon cc-web">🌐</div>
+      <div class="cc-info">
+        <div class="cc-label">Website</div>
+        <div class="cc-value"><a href="https://applemensportsbar.com">applemensportsbar.com</a></div>
+      </div>
+      <div class="qr-box"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAIAAADeJhTwAAADL0lEQVR4nO2dQU7DQAwAAfEL/sRj+VPfUY6shCzZst1OqpkjJGnakeNsvOu83+/3N2Hw8ewTkD+UAUIZIJQBQhkglAFCGSA+o398fX+Nf9jt51ba/jyHzL7ROZ/7Zr5Xdfsq0XcxMkAoA4QyQIQ546R6rT/JXHOnrsvReW7kkiqZ4xsZIJQBQhkgUjnjZOraOpUnorFI5u/VcUz0uRHVYxoZIJQBQhkgyjljg2qOObfv7FvdZhsjA4QyQCgDBCJnRET38p17/I36xBRGBghlgFAGiHLO2LgHz9QbMttH20TH6XyXjd/ByAChDBDKAJHKGdv35pladKdukaH6/GoDIwOEMkAoA0SYMx75TH/q+r4xtnjk72BkgFAGCGWASK3PmFqvkKldV+c1TT2nyuxbxXlTF0YZIJQB4j3TO2Tjulk95tSavs45REzN3TIyQCgDhDJAhDmjUz/IjEs6Y5epscLUGr2p51dGBghlgFAGiFQ9Y6p+sDFH9pFr+qbyaISRAUIZIJQBYqXf1Pa4obpvdazTqZ93xh9GBghlgFAGiPKzqWibiKn+gLQ+g9FnRVjPuBjKAKEMEGP1jGjfk07fjkf2MdzIWxmMDBDKAKEMEGPrM6Z6OmX6Sm3ks4jM7zDVw8rIAKEMEMoAMbYO/Fn37531GRs18Og8MxgZIJQBQhkgUs+mTqbmlT5rfcb2O5Q6+cnIAKEMEMoA0Xrn0tR1v9NvKnP87fUZGXw2dTGUAUIZIFrvXOrUEjrPiLaP2cH1GS+CMkAoA0Tr/Rkba7+r9YyNdy516IyTjAwQygChDBCpflMbEPqrZ/aN2OjBZWSAUAYIZYBYWQceUe1rO9XLNjqH7Z64zpu6MMoAoQwQrRp4hs6zmgzbNYzO+owqRgYIZYBQBohWDTxiqu/s9lgh07uwinNtXwRlgFAGiFYNfIPOfNnMdX97fWL1mCdGBghlgFAGCFzOmOovMnUOU9uYMy6GMkAoA0Q5Z2zUCTbe4z3VS7Ez56q6r5EBQhkglAFirN9UlU6vp5ONNeGd9234/owXQRkglAHiaesz5D9GBghlgFAGCGWAUAYIZYBQBohf2m0fsS3kMwUAAAAASUVORK5CYII=" alt="Website QR Code"></div>
+    </div>
+
+    <div class="contact-card">
+      <div class="cc-icon cc-fb">👍</div>
+      <div class="cc-info">
+        <div class="cc-label">Facebook</div>
+        <div class="cc-value"><a href="https://www.facebook.com/applemensportsbar">fb.com/applemensportsbar</a></div>
+      </div>
+      <div class="qr-box"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAIAAADeJhTwAAADHUlEQVR4nO2d0W3cMAxAc0G36CgZKrN0qI7SOa6fJZAKIEHy/By895n4LN890LJEiX48n883YfB+9QXIP5QBQhkglAFCGSCUAUIZIH6c/vHz43O8sT+/f/33/PHv1es5nbN6PdV2O5zaNTJAKAOEMkAc+4xI5t56InOvPx0fj6keX+1jMt9x43eIGBkglAFCGSBSfUYkc+/r3Fun+pJT3zA1btj4HYwMEMoAoQwQ5T5jis4zfmcMUW33lRgZIJQBQhkgLuszIp1n/0xfspGT2MDIAKEMEMoAUe4ztp/NM3NT1c+eqOZaOm1lMDJAKAOEMkCk+ozt5/Tq3FFnDqqaM49s/w5GBghlgFAGiMdVe/o6z/jVc1a5Ks9hZIBQBghlgDj2GZ39E509Exmm9lVsXGd13VfEyAChDBDKANGam+rcH6vtTs0vZeics3MNRgYIZYBQBohjnzG1HmlqzevUHm/yuMfIAKEMEMoAUZ6b6owhOuODqX3gmfNnvmOnlolzUzdAGSCUASI1zjixcV/erucxNf6YajdiZIBQBghlgEitm5paz5phuxYhIbfvOOMGKAOEMkCs7AOn5as7c00dqt/XyAChDBDKAFEeZ0Q21kRVj6m2leGVY6aIkQFCGSCUAaJVO2Sq3nhn/VX1mMxnN+bczGfcDGWAUAaIlXVThJxBhDBGyVyPkQFCGSCUAaJVO2QjD7y97naq3Y11AUYGCGWAUAYI9DuXtnPXG3VtO+MkIwOEMkAoA0Rqbiqy/e6j7Zrn2+umrDf1TVAGCGWAQNS17ewf7OQPOuOMqZxNxMgAoQwQygBxnJt6ZV2mjRq02/VOTsecriGDkQFCGSCUASKVz9hYdzSV89imk9uo9lVGBghlgFAGiMty4NV8xvY7OSKd+ufxOl03dWOUAUIZIFZqh2TYfud2tX77dh2tDEYGCGWAUAaIy/qMDBt7Jk6fzbC95srIAKEMEMoA0aodMgV5Lewr59CMDBDKAKEMEK13u3bYWI801Z9tjFfMgd8MZYBQBojL9mfIV4wMEMoAoQwQygChDBDKAKEMEH8BUzAhcS4n9osAAAAASUVORK5CYII=" alt="Facebook QR Code"></div>
+    </div>
+
+    <div class="contact-card full">
+      <div class="cc-icon cc-dd">🚗</div>
+      <div class="cc-info">
+        <div class="cc-label">Order on DoorDash</div>
+        <div class="cc-value"><a href="https://doordash.com/store/applemen-sports-bar-inwood-32146159/">DoorDash — Applemen Sports Bar (Inwood)</a></div>
+      </div>
+      <div class="qr-box"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFIklEQVR4nO3dQZLUMBBEUYbgFhyVNUflHM0SLfgRVVGVshf/LQe3bGYyZLVckr8+n8836X++P30Bei/DIWQ4hAyHkOEQMhxChkPoB/3Dr59f6yf7/effnEqlfTo+8fPTm9tM/11O9hxChkPIcAjhmONE96QKukfeHH9Urm0yVui2eZpcf+LvcrLnEDIcQoZDqDTmOHXHB12T7/SVcUPlXPTz7hilOzZKjyG67dtzCBkOIcMh1B5zbEk/a6D769a5JuOGyfXfZM8hZDiEDIfQY2OOU6J+oiIxH9MdT3Sf6dxkzyFkOIQMh1B7zJG+/01qJLufndRzTNqsfLYr8Xex5xAyHEKGQ6g05kislTjdXJ+y9ewmcXy3liX9d7HnEDIcQoZD6OupPcEmNY8315cm1sRW2qdjbrLnEDIcQoZDCMccW88Ubq496R4/ubatZyjd6++aPDOy5xAyHEKGQ6g0z/FUjWfF1nqWrXO9Ya3v5JiTPYeQ4RAyHEKRZytbcxKJz07mb7rtd03GEIm5FnsOIcMhZDiE2s9WnqpXeNte7BXp+Y/JeStt2nMIGQ4hwyE0mudI1CUk5jO6x1SuZ+Lm+ttJO/YcQoZDyHAIRWpIT4k5kkld5FadR+L30/3sFp+tqM1wCBkOIdyfY7KfJu0Rftqq/Uzcjyd7i5229l+vSLRpzyFkOIQMh1D7vbLdd5515w8S992KxFzL1rU9VetqzyFkOIQMhxCOObZqHSbzFlv3+8p5qZ3uM5StdSWJOg/nObTGcAgZDqH2PMdp8t36qfeSVNpM1IukxwfOc+gqwyFkOIRG71vpvmdk8tnEPuiVehSSrus8JdbjVNhzCBkOIcMhNNqHtHt84rt4uv5063puvrdliz2HkOEQMhxCo3qOxPpYaqcifXzX1txJYn+Ok2tl1WY4hAyHUGmtbEX3e/zWc5muRC1qZW1wRXqvDus5tMZwCBkOodI8x+R5QWIP9YpK3UZF4tlK5Ton47at+Rt7DiHDIWQ4hEY1pJXjt2ob37BH1ta9P/H7dE8wXWU4hAyH0GhPsMoxk/0tTt376KRepFt7UVn/MnnGlK47IfYcQoZDyHAItdetVCTWtXbPRed96jrpvIk1PltrZ+w5hAyHkOEQatdzVI5P7OdR8dR5u+ei4ydtTuZRiD2HkOEQMhxCpffKksT+oVt1kYm5B2o/MRdSubbKMZM9Ve05hAyHkOEQGr1XtuLmWo9umzf3G52MpbZqYrrH2HMIGQ4hwyFUmueY3Pu3pPfFIjfrRSptTljPoTWGQ8hwCJVqSE/p5yPpesytfcDos4k5m0n71M7JMYfaDIeQ4RAqrZU9Ve6L6fmPrec+lTa31u7SZxO2fv/2HEKGQ8hwCI3et0JuzjFMxh+J8UH3//jUO1ms59CI4RAyHELtZytbJmORrfv6G/bnIIlnUtZzaI3hEDIcQpF5DpLYC7x7/FY9bPr5y+S8lT1hK+w5hAyHkOEQau993pXYz3vynX5rfJNYb5LYB31ynfYcQoZDyHAItWtIb+5H3n2nCbV/c28uOn7S5tacU3cux55DyHAIGQ6h9phjy9Y8weSdaiS9NnXrXFvXSew5hAyHkOEQemzMcdpad/rUeGLyvGNrvmdyXmtI1WY4hAyH0Nr+HBOTZyVb8xyJeQKyNZZK77dmzyFkOIQMh1BpzJFYw5LY9zNha43MpCY0sVe69RwaMRxChkPosf059H72HEKGQ8hwCBkOIcMhZDiEDIfQX118zuO83J0UAAAAAElFTkSuQmCC" alt="DoorDash QR Code"></div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Applemen Sports Bar &mdash; Inwood, WV &nbsp;|&nbsp; <a href="/">Back to Home</a></p>
+</footer>
+
+</body>
+</html>
